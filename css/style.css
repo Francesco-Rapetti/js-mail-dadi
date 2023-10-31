@@ -11,7 +11,7 @@ body {
     height: 100vh;
 }
 
-.glass {
+#glass {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -19,14 +19,20 @@ body {
     -webkit-backdrop-filter: blur(9.7px);
     max-width: 1300px;
     width: 90%;
-    height: 600px;
+    height: 380px;
+    transition: all 1s ease-in-out!important;
+    overflow: hidden;
 }
+
+.expanded { height: 740px!important; }
 
 .btn {
     transition: all .05s linear !important;
     border: white 2px solid !important;
     width: 50%;
-    height: 30%;
+    height: 180px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .btn:hover {
@@ -37,3 +43,9 @@ body {
 .btn:active {
     transform: scale(.95);
 }
+
+#results { 
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+#results.display { opacity: 1; }
