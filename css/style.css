@@ -3,3 +3,37 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #322c2a;
+    background: url('https://media.istockphoto.com/id/1089517582/it/vettoriale/dadi-senza-cuciture-pattern-line-icone-sfondo-neutro-monocromatico.jpg?s=612x612&w=0&k=20&c=Qmp-P0QZTbTNGSgnU9yLFU1pUmZKdJz6OSvBD6IJnTU=') repeat;
+    background-size: 300px;
+    height: 100vh;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
+    max-width: 1300px;
+    width: 90%;
+    height: 600px;
+}
+
+.btn {
+    transition: all .05s linear !important;
+    border: white 2px solid !important;
+    width: 50%;
+    height: 30%;
+}
+
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #322c2a!important;
+}
+
+.btn:active {
+    transform: scale(.95);
+}
